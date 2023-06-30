@@ -1,0 +1,666 @@
+﻿1. Verb::ɑu
+SID::ɑu%VI%S1  
+Verb_Sense::ɑgʌmʌn_hu
+Eng_Gloss::Come
+Verb_class::Verb of motion
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+        Example::u              ghᴧr              ɑ-jo
+                        He-NOM     home-LOC   come-3.SG.PST
+                        ‘He came home’
+        Theta Roles::AGENT LOCATION VERB
+        Demand_Frame::Frame_ID_1
+Frame_ID::ɑu%VI%S1%FID1
+---------------------------------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+---------------------------------------------------------------------------------------------------------------------
+k1                m                0                         p                       [+ani]
+k2p                m                     0                         n                       [+plc]
+---------------------------------------------------------------------------------------------------------------------
+******************************************************************************
+SID::ɑu%VI%S2
+Verb_Sense::ʤɑn
+Eng_Gloss::Know
+Verb_class::Verb of perception
+Verbs_in_Same_Class:: Synonyms>ʤɑn%VI%S1%FID1
+Frame::
+        Frame_Name_1::
+        Example::us-lɑi        dherᴧi kurɑ              ɑũ-chʌ
+                           He-DAT    many  things-ACC   know-3.SG.PST
+                           ‘He knows many things’
+        Theta Roles::BENEFICIARY TOPIC VERB
+        Demand_Frame::Frame_ID_1
+Frame ID::ɑu%VI%S2%FID2
+---------------------------------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+---------------------------------------------------------------------------------------------------------------------
+k4a                       m                         lɑi                   p                       [+ani]
+k2                           m                           0                     n                       [+any]
+---------------------------------------------------------------------------------------------------------------------
+******************************************************************************
+
+
+
+
+
+
+2. Verb::kʌmɑu
+SID::kʌmɑu%VCAUS%S1
+Verb_Sense::kʌ̃pɑu
+Eng_Gloss::Shiver
+Verb_class::Verb of body-internal states of existence
+Verbs_in_Same_Class:: Synonyms>
+Frames::
+        Frame_Name_1::
+Example::ʤɑɖo-le    hʌri-lɑi       kʌm-ɑ-jo
+                          Cold-ERG Hari-ACC  shiver-CAUS-3.SG.M.PST
+                          'Hari shivered with cold'
+Theta Roles::CAUSE  PATIENT VERB
+Demand_Frame::Frame_ID_1
+Frame ID::  kʌmɑu%VCAUS%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+   k1                        m                     le                      n                    [+frc]
+   k4a                        m                     lɑi                    p/n                 [+con ]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::kʌmɑu%VT%S2
+Verb_Sense::ɑrʤʌn_gʌr
+Eng_Gloss::Earn
+Verb_class::Verb of obtaining
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::hʌri-le      pʌisɑ              kʌmɑ-jo
+                          Hari-ERG money-ACC earn-3.SG.M.PST
+                          'Hari earned  money'
+Theta Roles:: AGENT ASSET  VERB
+Demand_Frame::Frame_ID_1
+Frame ID::  kʌmɑu%VT%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+   k1                             m                         le/0                          n                     [+hum]
+   k2                           m                              0                          n                  [+obj]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+
+
+SID::kʌmɑu%VT%S3
+Verb_Sense::kheti_gᴧr
+Eng_Gloss::Lease
+Verb_class::Verb of ch6ang5e of possession
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::hʌri-le       mero  khet            kʌmɑ-jo
+                            Hari-ERG  my    land-ACC  lease-1.SG.M.PST
+                           'Hari took my land on lease’
+Theta Roles::AGENT THEME  VERB
+Demand_Frame::Frame_ID_1
+Frame ID:: kʌmɑu%VT%S3%FID3
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k1                     m                       le                          n                 [+hum]
+    k2                      m                           0                       n                 [+obj]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Verb::khʌs
+SID::khʌs%VI%S1  
+Verb_Sense::ʤhʌr
+Eng_Gloss::Fall down
+Verb_class::Verb of motion
+Verbs_in_Same_Class::Synonyms>gir%VI%S1%FID1, ʤhʌr%VI%S1%FID1                                                                                           
+                                                          munʈi%VI%S1%FID1, lʌɽ%VI%S1%FID1
+                                                          lʌnɖi%VI%S1%FID1
+Frames::
+        Frame_Name_1::
+Example::ɗhuŋgɑ         khʌs-jo
+                             Stone-ABS   fall-3.SG.PST
+                             'The stone fell down'
+Theta Roles::THEME  VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khʌs%VI%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k2                        m                     0                     n                    [+con]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::khʌs%VI%S2
+Verb_Sense::mʌr
+Eng_Gloss::Pass away
+Verb_class::Verb of Disappearance
+Verbs_in_Same_Class::Synonyms>uʈh%VI%S6%FID6, bit%VI%S2%FID2
+                                                          mʌr%VI%S1%FID1, sulki%VI%S2%FID2
+Frames::
+        Frame_Name_1::
+Example::us-ko        bhɑi                  khʌs-jo
+                            He-GEN   brother-NOM  die-3.SG.M.PST
+                          'His brother passed away'
+Theta Roles::PATIENT  VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khʌs%VI%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k1                        m                         0                    n                  [+hum]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+4. Verb::khul
+SID::khul%VT%S1  
+Verb_Sense::ughri
+Eng_Gloss::Open up
+Verb_class::Verb of appearance
+Verbs_in_Same_Class::Synonyms>ughri%V8%S1%FID1
+Frames::
+        Frame_Name_1::
+Example::ɗhokɑ             khul-jo
+                            Door-ACC    open-3.SG.PST
+                           'The door opened up'
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khul%VT%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+     k2                         m                     0                        n                    [+con]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::khul%VT%S2
+Verb_Sense::muktᴧ_hu
+Eng_Gloss::Get free
+Verb_class::Verb of removing
+Verbs_in_Same_Class::Synonyms>
+Valency::1
+Frames::
+        Frame_Name_1::
+Example::sʌbʌi  bʌndhʌn        khul-jo
+                             All           bond-ACC  free-3.SG.PST
+                              'All bonds got free'
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khul%VT%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+     k2                        m                         0                         n                   [+any]  
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+rh|ras|rsp|rd|r6
+
+
+
+
+
+
+
+
+SID::khul%VI%S3  
+Verb_Sense::suru_hu
+Eng_Gloss::Establish
+Verb_class::Aspectual verb
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::nʌjɑ̃     iskul             khul-jo
+                           New            school-ACC     establish-3.SG.PST
+                           'New school established'
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khul%VI%S3%FID3
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k2                         m                     0                         n                  [+inst]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::khul%VI%S4 
+Verb_Sense::suhɑu
+Eng_Gloss::Brighten up
+Verb_class::Verb of appearance
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::rɑto lugɑ-mɑ      sitɑ-ko       muhɑr        khul-jo
+                            Red dress-LOC  Sita-GEN   face-ACC  brighten-3.SG.PST
+                         'Sita’s face brightend up in her red dress '
+Theta Roles::LOCATION THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khul%VI%S4%FID4
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+     k7                              d                       mɑ                     n                   [+plc]
+     k2                    m                     0                     n                   [+obj]
+-------------------------------------------------------------------------------------------
+****s*********************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SID::khul%VI%S5
+Verb_Sense::uʤɑgᴧr_hu
+Eng_Gloss::Reveal out
+Verb_class::Verb of communication
+Verbs_in_Same_Class::Synonyms>ukel%V5%S2%FID2
+Frames::
+        Frame_Name_1::
+Example::sʌbʌi  rʌhʌsjʌ         khul-jo
+                           All          secret-ACC   reveal-3.SG.PST
+                           'All  the secrets got revealed'
+Theta Roles::TOPIC VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khul%VI%S5%FID5
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+     k2                        m                     0                         n                   [+topic]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::khul%VI%S3  
+Verb_Sense::sᴧphɑ_hu
+Eng_Gloss::Turn clear
+Verb_class::Clear Verb
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::ɑkɑs              khul-jo
+                          Sky-ACC     [turn clear]-3.SG.PST
+                         ‘Sky turned clear’
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::khul%VI%S3%FID6
+-----------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k2                        m                       0                        n                 [+nat,+obj]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+
+
+
+
+5. Verb::gʌl
+SID::gʌl%VI%S1
+Verb_Sense::thɑk
+Eng_Gloss::Tire
+Verb_class::Verb of psychological state
+Verbs_in_Same_Class::Synonyms>thɑk%VI%S1%FID1
+Valency::1
+Frames::
+        Frame_Name_1::
+Example::hʌri                gʌl-jo
+                          Hari-NOM        tire-3.SG.M.PST
+                          'Hari got tired'
+Theta Roles::EXPERIENCIER VERB
+Frame ID::gʌl%VI%S1%FID1
+------------------------------------------------------------------------------   
+arc-label               necessity     vibhakti         lextype       ontology
+------------------------------------------------------------------------------
+     k1                           m                 0                   n              [+ani]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::gʌl%VI%S2
+Verb_Sense::pᴧglᴧ
+Eng_Gloss::Melt down
+Verb_class::Verb of change of state
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::phʌlɑm         gʌl-jo
+                            Iron-ACC         melt-PST-3.SG.PST
+                           'Iron was melted down'
+Theta Roles::MATERIAL VERB
+Demand_Frame::Frame_ID_1
+Frame ID::gʌl%VI%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k2                        m                           0                         n                  [+sol]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+
+
+6. Verb::ghᴧʈ
+SID::ghᴧʈ%VI%S1
+Verb_Sense::kᴧm_hu
+Eng_Gloss::Decrease
+Verb_class::Verb of change of state
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::gɑɽi-ko              gᴧti              ghᴧʈ-jo
+                             Vehicle-GEN   speed-ACC  decrease-3.SG.PST
+                             ‘The speed of the vehicle decreased’
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::ghᴧʈ%VI%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k2                     m                     0                      n                   [+any]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::ghᴧʈ%VI%S2
+Verb_Sense::hu
+Eng_Gloss::Occur
+Verb_class::Verb of occurence
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::durghᴧʈᴧnɑ            ghᴧʈ-jo
+                            Accident-ACC     occur-3.SG.PST
+                         ‘The accident occured’
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Demand_Frame::Frame_ID_1
+Frame ID::ghᴧʈ%VI%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k2                        m                          0                          n                 [+evnt]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+7. Verb::ghum
+SID::ghum%VI%S1
+Verb_Sense::riŋ
+Eng_Gloss::Rotate/Revolve
+Verb_class::Verb of motion
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::ghɑm-vᴧripᴧri        prithvi          ghum-chᴧ
+                            Sun-around-LOC   earth-ACC  rotate-3.SG.NPST
+                            ‘The earth rotates around the sun’
+Theta Roles::LOCATION THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::ghum%VI%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k7                     d                 vᴧripᴧri/mɑ          0                 [+plc]
+    k2                     m                     0                      n                 [+nat,+obj]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::ghum%VI%S2
+Verb_Sense::ɖul
+Eng_Gloss::Visit/Tour
+Verb_class::Verb of motion
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::mᴧ         dɑrjiliŋ                 ghum-chu
+                            I-NOM  Darjeeling-LOC  visit-1.SG.NPST
+                             ‘I will visit Darjeeling’
+Theta Roles::AGENT LOCATION VERB
+Demand_Frame::Frame_ID_1
+Frame ID::ghum%VI%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k1                        m                        0/le                         p                  [+ani]
+    k7p                  m                     0                       n                  [+plc]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+8. Verb::cᴧrki
+SID::cᴧrki%VI%S1
+Verb_Sense::phuʈ
+Eng_Gloss::Crack
+Verb_class::Break Verb
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::ᴧinɑ                  cᴧrki-jo
+                            Mirror-ACC     crack-3.SG.PST
+                            ‘The mirror is cracked’
+Theta Roles::THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID:: cᴧrki%VI%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+     k2                    m                     0                      n                  [+obj]        
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::cᴧrki%VI%S2
+Verb_Sense::kʌɽki
+Eng_Gloss::Shriek
+Verb_class::Verb of communication
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::rɑm             cᴧrki-jo
+                            Ram-NOM  shriek-3.SG.PST
+                            ‘Ram shrieked’  
+Theta Roles::AGENT VERB
+Demand_Frame::Frame_ID_1
+Frame ID::cᴧrki%VI%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k1                         m                         0                         n                   [+hum]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+
+
+9. Verb::chɑn
+SID::chɑn%VT%S1
+Verb_Sense::cɑl
+Eng_Gloss::Filter
+Verb_class::Verb of removing
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::        hɑri-le       cijɑ           chɑn-jo
+                                Hari-ERG   tea-ACC  filter-3.SG.M.PST
+                                'Hari filtered the tea'
+Theta Roles::AGENT THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::chɑn%VT%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k1                     m                  le/0                    n                   [+ani]
+    k2                     m                     0                     n                   [+obj,]
+-------------------------------------------------------------------------------------------
+*************************************************************
+SID::chɑn%VT%S2
+Verb_Sense::roʤ
+Eng_Gloss::Choose
+Verb_class::Verb of obtaining
+Verbs_in_Same_Class::Synonyms>ruc%VT%S2%FID2
+Frames::
+        Frame_Name_1::
+Example::hʌri-le        rɑto   lugɑ              chɑn-jo
+                             Hari-ERG  red    dress-ACC  choose-3.SG.M.PST
+                            'Hari chose the red dress'
+Theta Roles::AGENT THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::chɑn%VT%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k1                          m                        le/0                        n                   [+ani]
+    k2                      m                   0                      n                   [+fobj]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+
+
+
+
+10. Verb::pʌr
+SID::pʌr%VI%S1
+Verb_Sense::brisʈi_hu
+Eng_Gloss::Fall or drop (rain)
+Verb_class::Verb of motion
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::pɑni              pʌr-jo
+                          Rain-ACC   fall-3.SG.PST
+                           ‘It has rained’
+Theta Roles::CAUSE VERB
+Demand_Frame::Frame_ID_1
+Frame ID::pʌr%VI%S1%FID1
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+     k2                   m                      0                      n                [+liq]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+SID::pʌr%VT%S2
+Verb_Sense::ɑi_lɑg
+Eng_Gloss::Come
+Verb_class::Verb of appearance
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::hʌri-lɑi      ɑpʌt                 pʌr-jo
+                           Hari-DAT  trouble-ACC  come-3.SG.PST
+                            ‘Troubles came upon Hari’
+Theta Roles::PATIENT THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::pʌr%VT%S2%FID2
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k4a                        m                       lɑi                  n                     [+hum]
+    k2                    m                     0                      n                      [+abs]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+Verb::pʌr
+SID::pʌr%VT%S3
+Verb_Sense::bodh_gᴧr
+Eng_Gloss::Feel 
+Verb_class::Verb of perception
+Verbs_in_Same_Class::Synonyms>pɑu%VT%S2%FID2
+                                                            lɑg%VT%S2%FID2
+Frames::
+        Frame_Name_1::
+Example::mʌ-lɑi   tim-ro        jʌrurᴧt                pʌr-jo
+                             I-DAT  you-GEN  necessity-ACC  feel-3.SG.PST
+                           ‘I feel to have your company’
+Theta Roles::PATIENT THEME VERB
+Demand_Frame::Frame_ID_1
+Frame ID::pʌr%VT%S3%FID3
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+    k4a                     m                         lɑi                 p/n                    [+ani]
+    k2                     m                          0                    n                     [+cog]
+-------------------------------------------------------------------------------------------
+*************************************************************
+
+
+SID::pʌr%VI%S4
+Verb_Sense::bɑl
+Eng_Gloss::Lit  
+Verb_class::Verb of change of state
+Verbs_in_Same_Class::Synonyms>
+Frames::
+        Frame_Name_1::
+Example::sʌlɑi                        pʌr-jo
+                           match stick-ACC    lit-3.SG.PST
+                          ‘Matchstick was lit’
+Theta Roles::MATERIAL VERB
+Demand_Frame::Frame_ID_1
+Frame ID::pʌr%VI%S4%FID4
+------------------------------------------------------------------------------------------
+arc-label        necessity        vibhakti        lextype                ontology
+------------------------------------------------------------------------------------------
+      k2                    m                    0                      n                 [+obj]
+-------------------------------------------------------------------------------------------
+*************************************************************
