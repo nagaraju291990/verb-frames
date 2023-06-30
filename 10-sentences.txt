@@ -1,0 +1,182 @@
+﻿1. Sentence 1 :  ऊ घर आयो | 
+POS Tags 1 :  { ऊ , PRP } { घर , NN } { आयो , VF  } { | , PUNC } 
+Chunks:  ( ऊ ) ( घर )
+DREL:  ({ ऊ , PRP })_(k1)    ({ घर , NN })_(K2p)  { आयो , VF   ( ɑu : root ) } { | , PUNC } 
+
+
+Sentence 2 :  उसलाई धेरै कुरा आउँछ | 
+POS Tags 2 :  { उस , PRP } {लाई , PSP } { धेरै , JJ } { कुरा , NN } { आउँछ , VF } { | , PUNC } 
+Chunks:  ( उसलाई ) ( धेरै कुरा )
+DREL:  ({ उस PRP }{लाई , PSP })_k4a     ({ धेरै , JJ } { कुरा , NN })_k2    { आउँछ , VF ( ɑu : root ) } { | , PUNC } 
+
+
+2. Sentence 47 :  जाडोले हरिलाई कमायो 
+POS Tags 47 :  { जाडो , NN } {ले , PSP } { हरि , NNP } {लाई , PSP } { कमायो , VF } { | , PUNC } 
+Chunks:  ( जाडोले ) ( हरिलाई )
+DREL:  ({ जाडो , NN }    {ले , PSP })_(k1) ({ हरि , NNP }{लाई , PSP })_(k4a){ कमायो , VF ( kʌmɑu : root ) } { | , PUNC } 
+
+
+Sentence 48 :  हरिले पैसा कमायो | 
+POS Tags 48 :  { हरि , NNP } {ले , PSP } { पैसा , NN } { कमायो , VF } { | , PUNC } 
+Chunks:  ( हरिले ) ( पैसा )
+DREL:  ({ हरि , NNP } {ले , PSP }})_(k1)    ({ पैसा , NN })_(k2)    { कमायो , VF ( kʌmɑu : root ) } { | , PUNC } 
+
+
+Sentence 49 :  हरिले मेरो खेत कमायो | 
+POS Tags 49 :  { हरि , NNP } {ले , PSP } { मेरो , PRP } { खेत , NN } { कमायो , VF } { | , PUNC } 
+Chunks:  ( हरिले ) ( मेरो खेत )
+DREL:  ({ हरि , NNP }{ले , PSP })_(k1)    ({ मेरो , PRP } { खेत , NN })_(k2)    { कमायो , VF ( kʌmɑu : root  ) } { | , PUNC } 
+
+
+
+
+
+
+3. Sentence 76 :  ढुङ्गा खस्यो | 
+POS Tags 76 :  { ढुङ्गा , NN } { खस्यो , VF } { | , PUNC } 
+Chunks:  ( ढुङ्गा )
+DREL:  ({ ढुङ्गा , NN })_(k2)    { खस्यो , VF (  khʌs : root ) } { | , PUNC } 
+
+
+Sentence 77 :  उसको भाइ खस्यो | 
+POS Tags 77 :  { उस , PRP } {को , PSP } { भाइ , NN } { खस्यो , VF } { | , PUNC } 
+DREL : ({ उस , PRP } {को , PSP } { भाइ , NN })_(k1)    { खस्यो , VF ( khʌs : root ) } { | , PUNC } 
+
+
+4.  
+Sentence 91 :  ढोका खुल्यो | 
+POS Tags 91 :  { ढोका , NN } { खुल्यो , VF } { | , PUNC } 
+Chunks:  ( ढोका )
+DREL:  ({ ढोका , NN })_(k2)    { खुल्यो , VF ( khul : root )} { | , PUNC } 
+
+
+Sentence 92 :  सबै बन्धन खुल्यो | 
+POS Tags 92 :  { सबै , JJ } { बन्धन , NN } { खुल्यो , VF } { | , PUNC } 
+Chunks:  ( सबै बन्धन )
+DREL:  ({ सबै , JJ } { बन्धन , NN })_(k2) { खुल्यो , VF ( khul : root )} { | , PUNC } 
+
+
+Sent ID:  93
+Sentence 93 :  नयाँ स्कुल खुल्यो | 
+POS Tags 93 :  { नयाँ , JJ } { स्कुल , NN } { खुल्यो , VF } { | , PUNC } 
+Chunks:  ( नयाँ स्कुल )
+DREL:  ({ नयाँ , JJ }    { स्कुल , NN })_(k2) { खुल्यो , VF ( khul : root ) } { | , PUNC } 
+
+
+Sentence 94 :  रातो लुगामा सीताको मुहार खुल्यो | 
+POS Tags 94 :  { रातो , JJ } { लुगा , NN } {मा , PSP } { सीताको , NNP } { मुहार , NN } { खुल्यो , VF } { | , PUNC } 
+Chunks:  ( रातो लुगामा ) ( सीताको मुहार )
+DREL:  ({ रातो , JJ }{ लुगा , NN } {मा , PSP })_(k7)     ({ सीताको ,  NNP } { मुहार , NN })_(k2) { खुल्यो , VF ( khul : root ) } { | , PUNC } 
+
+
+Sent ID:  95
+Sentence 95 :  सबै रहस्य खुल्यो | 
+POS Tags 95 :  { सबै , JJ } { रहस्य , NN } { खुल्यो , VF } { | , PUNC } 
+Chunks:  ( सबै रहस्य )
+DREL:  ({ सबै , JJ } { रहस्य , NN })_(k2) { खुल्यो , VF ( khul : root )} { | , PUNC } 
+
+
+Sent ID:  96
+Sentence 96 :  आकास खुल्यो | 
+POS Tags 96 :  { आकास , NN } { खुल्यो , VF } { | , PUNC } 
+Chunks:  ( आकास )
+DREL:  ({ आकास , NN })_(k2)    { खुल्यो , VF ( khul : root )} { | , PUNC }
+
+
+
+
+
+
+5. 
+Sentence 107 :  हरि गल्यो | 
+POS Tags 107 :  { हरि , NNP } { गल्यो , VF } { | , PUNC } 
+Chunks:  ( हरि )
+DREL:  ({ हरि , NNP })_(k1)    { गल्यो , VF ( gʌl : root ) } { | , PUNC } 
+
+
+Sent ID:  108
+Sentence 108 :  फलाम गल्यो | 
+POS Tags 108 :  { फलाम , NN } { गल्यो , VF } { | , PUNC } 
+Chunks:  ( फलाम )
+DREL:  ({ फलाम , NN })_(k2)    { गल्यो , VF ( gʌl : root ) } { | , PUNC }
+
+
+
+
+6.  
+Sentence 111 :  गाडीको गति घट्यो | 
+POS Tags 111 :  { गाडी , NN } {को , PSP } { गति , NN } { घट्यो , VF } { | , PUNC } 
+Chunks:  ( गाडीको ) ( गति )
+DREL:  ({ गाडी , NN }{को , PSP } { गति , NN })_(k2)    { घट्यो , VF ( ghᴧʈ : root ) } { | , PUNC } 
+
+
+Sent ID:  112
+Sentence 112 :  दुर्घटना घट्यो | 
+POS Tags 112 :  { दुर्घटना , NN } { घट्यो , VF } { | , PUNC } 
+Chunks:  ( दुर्घटना )
+DREL:  ({ दुर्घटना , NN })_(k2)    { घट्यो , VF ( ghᴧʈ : root ) } { | , PUNC }
+ 
+
+
+7. Sentence 113 :  घामवरिपरि पृथ्वी घुम्छ | 
+POS Tags 113 :  { घामवरिपरि , NN } { पृथ्वी , NN } { घुम्छ , VF } { | , PUNC } 
+Chunks:  ( घामवरिपरि ) ( पृथ्वी )
+DREL:  ({ घामवरिपरि , NN })_(k7)    ({ पृथ्वी , NN })_(k2)    { घुम्छ , VF ( ghum : root )} { | , PUNC } 
+
+
+Sentence 114 :  म दार्जिलिङ घुम्छु | 
+POS Tags 114 :  { म , PRP } { दार्जिलिङ , NNP } { घुम्छु , VF } { | , PUNC } 
+Chunks:  ( म ) ( दार्जिलिङ )
+DREL:  ({ म , PRP })_Karta(K1)    ({ दार्जिलिङ , NNP })_(k7p) { घुम्छु , VF ( ghum : root )} { | , PUNC }
+
+
+
+
+
+
+8. Sentence 119 :  ऐना चर्कियो | 
+POS Tags 119 :  { ऐना , NN } { चर्कियो , VF } { | , PUNC } 
+Chunks:  ( ऐना )
+DREL:  ({ ऐना , NN })_(k2)    { चर्कियो , VF ( cᴧrki : root ) } { | , PUNC } 
+
+
+Sentence 120 :  राम चर्कियो | 
+POS Tags 120 :  { राम , NNP } { चर्कियो , VF } { | , PUNC } 
+Chunks:  ( राम )
+DREL:  ({ राम , NNP })_(k1)    { चर्कियो , VF ( cᴧrki : root ) } { | , PUNC }
+
+
+9. Sentence 137 :  हरिले चिया छान्यो | 
+POS Tags 137 :  { हरि , NNP } {ले , PSP } { चिया , NN } { छान्यो , VF } { | , PUNC } 
+Chunks:  ( हरिले ) ( चिया )
+DREL:  ({ हरि , NNP }    {ले , PSP })_(k1) ({ चिया , NN })_(k2)    { छान्यो , VF ( chɑn : root ) } { | , PUNC } 
+
+
+Sentence 138 :  हरिले रातो लुगा छान्यो | 
+POS Tags 138 :  { हरि , NNP } {ले , PSP } { रातो , JJ } { लुगा , NN } { छान्यो , VF } { | , PUNC } 
+Chunks:  ( हरिले ) ( रातो लुगा )
+DREL:  ({ हरि , NNP }    {ले , PSP })_(k1) ({ रातो , JJ } { लुगा , NN })_(k2)       { छान्यो , VF ( chɑn : root ) } { | , PUNC }
+
+
+10. Sentence 233 :  पानी पर्‍यो | 
+POS Tags 233 :  { पानी , NN } { पर्‍यो , VF } { | , PUNC } 
+Chunks:  ( पानी )
+DREL:  ({ पानी , NN })_(k2)    { पर्‍यो , VF ( pʌr : root ) } { | , PUNC } 
+
+
+Sentence 234 :  हरिलाई आपत पर्‍यो | 
+POS Tags 234 :  { हरि , NNP } {लाई , PSP } { आपत , NN } { पर्‍यो , VF } { | , PUNC } 
+Chunks:  ( हरिलाई ) ( आपत )
+DREL:  ({ हरि , NNP }    {लाई , PSP })_(k4a) ({ आपत , NN })_(k2)    { पर्‍यो , VF ( pʌr : root ) } { | , PUNC } 
+
+
+Sentence 235 :  मलाई तिम्रो जरुरत पर्‍यो | 
+POS Tags 235 :  { म , PRP } {लाई , PSP } { तिम्रो , PRP } { जरुरत , NN } { पर्‍यो , VF } { | , PUNC } 
+Chunks:  ( मलाई ) ( तिम्रो जरुरत )
+DREL:  ({ म , PRP }    {लाई , PSP })_(k4a) ({ तिम्रो , PRP } { जरुरत , NN })_(k2)    { पर्‍यो , VF ( pʌr : root ) } { | , PUNC } 
+
+
+Sentence 236 :  सलाई पर्‍यो | 
+POS Tags 236 :  { सलाई , NN } { पर्‍यो , VF } { | , PUNC } 
+Chunks:  ( सलाई )
+DREL:  ({ सलाई , NN })_(k2) { पर्‍यो , VF ( pʌr : root ) } { | , PUNC }
