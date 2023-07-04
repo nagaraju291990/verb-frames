@@ -77,7 +77,7 @@ fp.close()
 onto_dict_hash={}
 
 for o in onto_lines:
-	#print(o)
+	print(o)
 	if(o == ""):
 		continue
 	o = o.strip()
@@ -114,8 +114,8 @@ for line in lines:
 			#search_krel = m2.group(1)
 			#print(krel_arr)
 
-			roots = re.findall(r'\{ ?([\u0900-\u09FF]+) ?, ?[^V][A-Z]+ ?\}', line)#({ ऊ , PRP })_k1 ({ घर , NN })_k2p 
-			print(roots)
+			roots = re.findall(r'\{ ?([\u0900-\u09FF]+) ?, ?NN|NNP|PRP|RB|JJ ?\}', line)#({ ऊ , PRP })_k1 ({ घर , NN })_k2p 
+			#print(roots)
 			matching_sids_on_krel = []
 			matching_sids_on_ont = []
 			if(search_verb_root in verb_frames_hash):
