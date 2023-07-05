@@ -8,6 +8,7 @@ fp.close()
 
 verb_frames_hash = {}
 sid_krel_hash = {}
+sid_onto_hash = {}
 verb_root_flag = 0
 sid_flag = 0
 
@@ -23,10 +24,15 @@ for v in verb_frames:
 			#m = re.search(r'^(k[1-7][apst]?) ([md]) .*', v)
 			#print(m.group())
 			krel_nec = m.group(1) # "\t" + m.group(2) + "\t" + m.group(3)	#krel + "\t" + "neccesity" + "\t" + ontology
+			krel_onto = m.group(1) + "\t" + m.group(3)
 			if(sid in sid_krel_hash):
 				sid_krel_hash[sid].append(krel_nec)
 			else:
 				sid_krel_hash[sid] = [krel_nec]
+			if(sid in sid_onto_hash):
+				sid_onto_hash[sid].append(krel_onto)
+			else:
+				sid_onto_hash[sid] = [krel_onto]
 			#sid_flag = 0
 			#print(v)
 			#print(sid)
@@ -120,8 +126,8 @@ for line in lines:
 			#search_krel = m2.group(1)
 			#print(krel_arr)
 
-			roots = re.findall(r'\{ ?([\u0900-\u09FF]+) ?, ?NN|NNP|PRP|RB|JJ ?\}', line)#({ ऊ , PRP })_k1 ({ घर , NN })_k2p 
-			#print(roots)
+			chunks = re.findall(r'\((.*?)\)_(rh|ras|rsp|rd|r6|k[1-7][apgst]?)', line)#[({ ऊ , PRP })_k1, ({ घर , NN })_k2p ]
+			#print(chunks)
 			matching_sids_on_krel = []
 			matching_sids_on_ont = []
 			if(search_verb_root in verb_frames_hash):
@@ -145,12 +151,19 @@ for line in lines:
 								#break
 					if(flag == 0):
 						matching_sids_on_krel.append(sid_t)
-						#for vf in verb_frame_value:
-						#	vf_array = vf.split("\t")
-						#	for root in roots:		
-						#		if(root != ""):
-						#			if(root in onto_dict_hash):
-						#				#print(root, sid_t, vf_array[2], onto_dict_hash[root])
+					if(len(matching_sids_on_krel) > 1):
+						for sd in matching_sids_on_krel:
+							#roots = re.search(r'')
+							verb_frame_value = sid_onto_hash[sd]
+							for vf in verb_frame_value:
+								vf_array = vf.split("\t")
+								for chunk in chunks:
+									print(chunk[1] + ":" + vf_array[0])
+									if(chunk[1] == vf_array[0]):
+										root = re.search(r'.*\{ ?(.*)NN|NNP|PRP ?\}', chunk[0])
+										if(root):
+											print("s"+chunk[1])
+											print(root.group(0))
 						#				if(re.search(r'' + vf_array[2], onto_dict_hash[root])):
 						#					matching_sids_on_ont.append(sid_t)
 				matching_sids_on_ont = list(set(matching_sids_on_ont))
