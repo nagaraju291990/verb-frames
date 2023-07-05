@@ -1,0 +1,5 @@
+Sent ID:  4
+Sentence 4 :  रामले मेरो चित्र आँक्यो | 
+POS Tags 4 :  { राम , NNP } {ले , PSP } { मेरो , PRP } { चित्र , NN } { आँक्यो , VF } { | , PUNC } 
+Chunks:  ( रामले ) ( मेरो चित्र )
+DREL:  ({ राम , NNP }{ले , PSP })_k1    ({ मेरो , PRP } { चित्र , NN })_k2    { आँक्यो , VF ( ɑ̃k : root > performance verb ) } { | , PUNC } 

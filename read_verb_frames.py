@@ -1,13 +1,13 @@
 import sys
 import re
-
+from itertools import zip_longest
 ##read verb frames file
 fp = open(sys.argv[1], "r")
 verb_frames = fp.read().split("\n")
 fp.close()
 
 verb_frames_hash = {}
-sid_hash = {}
+sid_krel_hash = {}
 verb_root_flag = 0
 sid_flag = 0
 
@@ -22,11 +22,11 @@ for v in verb_frames:
 			m = re.search(r'^(rh|ras|rsp|rd|r6|k[1-7][apgst]?) ([md]) .*(\[\+?[a-z]+(, ?\+?[a-z]+)?(, ?\+?[a-z]+)?\]).*', v,  re.IGNORECASE)
 			#m = re.search(r'^(k[1-7][apst]?) ([md]) .*', v)
 			#print(m.group())
-			krel_nec = m.group(1) + "\t" + m.group(2) + "\t" + m.group(3)	#krel + "\t" + "neccesity" + "\t" + ontology
-			if(sid in sid_hash):
-				sid_hash[sid].append(krel_nec)
+			krel_nec = m.group(1) # "\t" + m.group(2) + "\t" + m.group(3)	#krel + "\t" + "neccesity" + "\t" + ontology
+			if(sid in sid_krel_hash):
+				sid_krel_hash[sid].append(krel_nec)
 			else:
-				sid_hash[sid] = [krel_nec]
+				sid_krel_hash[sid] = [krel_nec]
 			#sid_flag = 0
 			#print(v)
 			#print(sid)
@@ -77,14 +77,20 @@ fp.close()
 onto_dict_hash={}
 
 for o in onto_lines:
-	print(o)
+	#print(o)
 	if(o == ""):
 		continue
 	o = o.strip()
 	o = re.sub(r' +', ' ', o)
+	o = re.sub(r' \+', '+', o)
 	arr = o.split(" ")
-	onto_dict_hash[arr[0]] = arr[1]
+	#print(arr[0] + "|" + arr[1])
+	onto_feature = arr[1]
+	#onto_feature = re.sub(r'[\[\]]', '', onto_feature)
+	#onto_features = onto_feature.split(",")
+	onto_dict_hash[arr[0]] = onto_feature
 
+#print(onto_dict_hash)
 #read input file
 fp = open(sys.argv[3], "r")
 lines = fp.read().split("\n")
@@ -121,29 +127,32 @@ for line in lines:
 			if(search_verb_root in verb_frames_hash):
 				sid_val = verb_frames_hash[search_verb_root]
 				for sid_t in sid_val:
-					verb_frame_value = sid_hash[sid_t]
-					#print(search_verb_root + ":" + ",".join(verb_frame_value))
+					verb_frame_value = sid_krel_hash[sid_t]
+					#print(sid_t + ":" + search_verb_root + ":" + ",".join(verb_frame_value))
 					flag = 0
-					for search_krel in krel_arr:
-						for vf in verb_frame_value:
-							vf_array = vf.split("\t")
+					krel_arr.sort()
+					verb_frame_value.sort()
+					for index, (search_krel,vf) in enumerate(zip_longest(krel_arr, verb_frame_value, 
+                                              fillvalue=object())):
+						#for vf in verb_frame_value:
+							#print(search_krel, vf)
+							#vf_array = vf.split("\t")
 							#print(vf_array[0], search_krel)
-							if(search_krel == vf_array[0]):
-								flag2 = 1
-								break
-								#print("Matching sid=%s on the basis of krel" %(vf_array[0]))
-								#flag = 1
-								#print(vf_array[3])
-								#if(vf_array[3] != "[+any]"):
-							else:
-								flag = -1
-						if(flag == 0 and flag2 == 1):
-							matching_sids_on_krel.append(sid_t)
-							for root in roots:		
-								if(root in onto_dict_hash):
-									#print(root,vf_array[2], onto_dict_hash[root])
-									if(re.search(r''+vf_array[2], onto_dict_hash[root])):
-										matching_sids_on_ont.append(sid_t)
+							if(search_krel != vf):
+								flag = 1
+							#else:
+								#flag = -1
+								#break
+					if(flag == 0):
+						matching_sids_on_krel.append(sid_t)
+						#for vf in verb_frame_value:
+						#	vf_array = vf.split("\t")
+						#	for root in roots:		
+						#		if(root != ""):
+						#			if(root in onto_dict_hash):
+						#				#print(root, sid_t, vf_array[2], onto_dict_hash[root])
+						#				if(re.search(r'' + vf_array[2], onto_dict_hash[root])):
+						#					matching_sids_on_ont.append(sid_t)
 				matching_sids_on_ont = list(set(matching_sids_on_ont))
 				print("Matching sids only on krel basis:%s" %(", ".join(matching_sids_on_krel)))
 				print("Matching sids on ontology basis:%s" %(", ".join(matching_sids_on_ont)))
