@@ -158,14 +158,20 @@ for line in lines:
 							for vf in verb_frame_value:
 								vf_array = vf.split("\t")
 								for chunk in chunks:
-									print(chunk[1] + ":" + vf_array[0])
+									#print(chunk[1] + ":" + vf_array[0])
 									if(chunk[1] == vf_array[0]):
-										root = re.search(r'.*\{ ?(.*)NN|NNP|PRP ?\}', chunk[0])
+										try:
+											root = re.findall(r'.*{ ?(.*) ?, ?NN|NNP|PRP ?\}', chunk
+											[0])[-1]
+										except:
+											root = ''
+										#print(root)
 										if(root):
 											print("s"+chunk[1])
-											print(root.group(0))
-						#				if(re.search(r'' + vf_array[2], onto_dict_hash[root])):
-						#					matching_sids_on_ont.append(sid_t)
+											print(root)
+										if(root in onto_dict_hash):
+											if(re.search(r'' + vf_array[2], onto_dict_hash[root])):
+												matching_sids_on_ont.append(sid_t)
 				matching_sids_on_ont = list(set(matching_sids_on_ont))
 				print("Matching sids only on krel basis:%s" %(", ".join(matching_sids_on_krel)))
 				print("Matching sids on ontology basis:%s" %(", ".join(matching_sids_on_ont)))
