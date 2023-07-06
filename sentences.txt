@@ -314,7 +314,7 @@ Sent ID:  53
 Sentence 53 :  उसले लुगाको दाम कस्यो | 
 POS Tags 53 :  { उस , PRP } {ले , PSP } { लुगाको , NN } { दाम , NN } { कस्यो , VF } { | , PUNC } 
 Chunks:  ( उसले ) (लुगाको दाम)
-DREL:  ({ उस , PRP }{ले , PSP })_k1    ({ लुगाको , NN } { दाम , NN })_K2{ कस्यो , VF ( kᴧs : root > Verb of communication )  } { | , PUNC } 
+DREL:  ({ उस , PRP }{ले , PSP })_k1    ({ लुगाको , NN } { दाम , NN })_k2 { कस्यो , VF ( kᴧs : root > Verb of communication )  } { | , PUNC } 
 
 Sent ID:  54
 Sentence 54 :  भाइले आइफल काट्यो | 

@@ -16,7 +16,7 @@ sid_flag = 0
 for v in verb_frames:
 	#print(v)
 	v = v.strip()
-
+	#v = v.lower()
 	if(sid_flag):
 		if(re.search(r'Verb_class::', v, re.IGNORECASE)):
 			verb_class = re.sub(r'Verb_class::', '', v, re.IGNORECASE)
@@ -114,6 +114,7 @@ for line in lines:
 	#print(line)
 	line = line.strip()
 	line = re.sub(r' +', ' ',line)
+	#line = line.lower()
 
 	if(re.search(r'Sentence ?[0-9]+', line),  re.IGNORECASE):
 		print(line)
@@ -129,11 +130,11 @@ for line in lines:
 			search_verb_class = m1.group(2).strip().lower()
 			#print("|" + verb_type + "|")
 
-			krel_arr = re.findall(r'\(\{.*?\}\)_\(?(rh|ras|rsp|rd|r6|k[1-7][apgst]?)\)?', line)
+			krel_arr = re.findall(r'\(\{.*?\}\)_\(?(rh|ras|rsp|rd|r6|[Kk][1-7][apgst]?)\)?', line)
 			#search_krel = m2.group(1)
 			#print(krel_arr)
 
-			chunks = re.findall(r'\((.*?)\)_(rh|ras|rsp|rd|r6|k[1-7][apgst]?)', line)#[({ ऊ , PRP })_k1, ({ घर , NN })_k2p ]
+			chunks = re.findall(r'\((.*?)\)_(rh|ras|rsp|rd|r6|[Kk][1-7][apgst]?)', line)#[({ ऊ , PRP })_k1, ({ घर , NN })_k2p ]
 			#print(chunks)
 			matching_sids_on_krel = []
 			matching_sids_on_ont = []
@@ -178,14 +179,21 @@ for line in lines:
 											#print("s"+chunk[1])
 											#print(root)
 											if(root in onto_dict_hash):
-												#print(vf_array[1] + '----' + onto_dict_hash[root])
-												if(re.search(r'' + vf_array[1], onto_dict_hash[root])):
+												print(vf_array[1] + '----' + onto_dict_hash[root])
+												#if(re.search(r'' + vf_array[1], onto_dict_hash[root])):
+												if(vf_array[1] == onto_dict_hash[root]):
 													matching_sids_on_ont.append(sd)
 				#matching_sids_on_ont = list(set(matching_sids_on_ont))
 					if(len(matching_sids_on_ont) > 1):
 						for sd in matching_sids_on_ont:
 							if(sd in sid_verb_class_hash):
-								print(sid_verb_class_hash[sd] + '---' + search_verb_class)
+								#print(sid_verb_class_hash[sd] + '---' + search_verb_class)
+								if(sid_verb_class_hash[sd] == search_verb_class):
+									matching_sids_on_verb_type.append(sd)
+					elif(len(matching_sids_on_ont) == 0 and len(matching_sids_on_krel) > 1):
+						for sd in matching_sids_on_krel:
+							if(sd in sid_verb_class_hash):
+								#print(sid_verb_class_hash[sd] + '---' + search_verb_class)
 								if(sid_verb_class_hash[sd] == search_verb_class):
 									matching_sids_on_verb_type.append(sd)
 				matching_sids_on_ont = list(set(matching_sids_on_ont))
