@@ -162,16 +162,19 @@ for line in lines:
 									if(chunk[1] == vf_array[0]):
 										try:
 											root = re.findall(r'.*{ ?(.*) ?, ?NN|NNP|PRP ?\}', chunk
-											[0])[-1]
+											[0])[-1].strip()
 										except:
 											root = ''
 										#print(root)
 										if(root):
-											print("s"+chunk[1])
-											print(root)
-										if(root in onto_dict_hash):
-											if(re.search(r'' + vf_array[2], onto_dict_hash[root])):
-												matching_sids_on_ont.append(sid_t)
+											#print("s"+chunk[1])
+											#print(root)
+											if(root in onto_dict_hash):
+												#print(vf_array[1] + '----' + onto_dict_hash[root])
+												if(re.search(r'' + vf_array[1], onto_dict_hash[root])):
+													matching_sids_on_ont.append(sd)
 				matching_sids_on_ont = list(set(matching_sids_on_ont))
+				matching_sids_on_ont.sort()
+				matching_sids_on_krel.sort()
 				print("Matching sids only on krel basis:%s" %(", ".join(matching_sids_on_krel)))
 				print("Matching sids on ontology basis:%s" %(", ".join(matching_sids_on_ont)))
