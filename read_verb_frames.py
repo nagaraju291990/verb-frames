@@ -9,6 +9,7 @@ fp.close()
 verb_frames_hash = {}
 sid_krel_hash = {}
 sid_onto_hash = {}
+sid_verb_class_hash = {}
 verb_root_flag = 0
 sid_flag = 0
 
@@ -17,6 +18,12 @@ for v in verb_frames:
 	v = v.strip()
 
 	if(sid_flag):
+		if(re.search(r'Verb_class::', v, re.IGNORECASE)):
+			verb_class = re.sub(r'Verb_class::', '', v, re.IGNORECASE)
+			verb_class = verb_class.lower()
+			verb_class = verb_class.strip()
+			sid_verb_class_hash[sid] = verb_class
+
 		if( re.search(r'^(rh|ras|rsp|rd|r6|k[0-9][a-z]?) *[md] .*', v, re.IGNORECASE) ):
 			v = re.sub(r' +', ' ', v)
 			#print(v)
@@ -119,8 +126,8 @@ for line in lines:
 			search_verb_root = m1.group(1)
 			search_verb_root = search_verb_root.strip()
 
-			verb_type = m1.group(2).strip()
-			#print("|" + search_verb_root + "|")
+			search_verb_class = m1.group(2).strip().lower()
+			#print("|" + verb_type + "|")
 
 			krel_arr = re.findall(r'\(\{.*?\}\)_\(?(rh|ras|rsp|rd|r6|k[1-7][apgst]?)\)?', line)
 			#search_krel = m2.group(1)
@@ -130,6 +137,7 @@ for line in lines:
 			#print(chunks)
 			matching_sids_on_krel = []
 			matching_sids_on_ont = []
+			matching_sids_on_verb_type = []
 			if(search_verb_root in verb_frames_hash):
 				sid_val = verb_frames_hash[search_verb_root]
 				for sid_t in sid_val:
@@ -173,8 +181,19 @@ for line in lines:
 												#print(vf_array[1] + '----' + onto_dict_hash[root])
 												if(re.search(r'' + vf_array[1], onto_dict_hash[root])):
 													matching_sids_on_ont.append(sd)
+				#matching_sids_on_ont = list(set(matching_sids_on_ont))
+					if(len(matching_sids_on_ont) > 1):
+						for sd in matching_sids_on_ont:
+							if(sd in sid_verb_class_hash):
+								print(sid_verb_class_hash[sd] + '---' + search_verb_class)
+								if(sid_verb_class_hash[sd] == search_verb_class):
+									matching_sids_on_verb_type.append(sd)
 				matching_sids_on_ont = list(set(matching_sids_on_ont))
+				matching_sids_on_verb_type = list(set(matching_sids_on_verb_type))
+
 				matching_sids_on_ont.sort()
 				matching_sids_on_krel.sort()
+				matching_sids_on_verb_type.sort()
 				print("Matching sids only on krel basis:%s" %(", ".join(matching_sids_on_krel)))
 				print("Matching sids on ontology basis:%s" %(", ".join(matching_sids_on_ont)))
+				print("Matching sids on verb class basis:%s" %(", ".join(matching_sids_on_verb_type)))
