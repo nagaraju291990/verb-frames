@@ -179,7 +179,7 @@ for line in lines:
 											#print("s"+chunk[1])
 											#print(root)
 											if(root in onto_dict_hash):
-												print(vf_array[1] + '----' + onto_dict_hash[root])
+												#print(vf_array[1] + '----' + onto_dict_hash[root])
 												#if(re.search(r'' + vf_array[1], onto_dict_hash[root])):
 												if(vf_array[1] == onto_dict_hash[root]):
 													matching_sids_on_ont.append(sd)
